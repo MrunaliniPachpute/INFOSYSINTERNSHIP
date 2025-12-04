@@ -95,6 +95,8 @@ location_heatmap = df.pivot_table(
     aggfunc=np.mean
 )
 
+
+
 plt.figure(figsize=(14,7))
 sns.heatmap(location_heatmap, cmap='coolwarm', annot=True)
 plt.title("Average Severity Score by Location and Violation Type")
